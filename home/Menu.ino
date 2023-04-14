@@ -36,7 +36,7 @@ void logoG() {
   led.begin();
   for (int i = 0; i < sizeof(LogoG) / sizeof(LogoG[0]); i++) {
     num = LogoG[i] - 1;
-    led.setPixelColor(num, led.Color(255, 0, 0));
+    led.setPixelColor(num, led.Color(0, 255, 0));
   }
   led.show();
 }
@@ -44,7 +44,7 @@ void logoB() {
   led.begin();
   for (int i = 0; i < sizeof(LogoB) / sizeof(LogoB[0]); i++) {
     num = LogoB[i] - 1;
-    led.setPixelColor(num, led.Color(255, 0, 0));
+    led.setPixelColor(num, led.Color(0, 0, 255));
   }
   led.show();
 }
@@ -52,7 +52,7 @@ void logoW() {
   led.begin();
   for (int i = 0; i < sizeof(LogoW) / sizeof(LogoW[0]); i++) {
     num = LogoW[i] - 1;
-    led.setPixelColor(num, led.Color(255, 0, 0));
+    led.setPixelColor(num, led.Color(255, 255, 255));
   }
   led.show();
 }
